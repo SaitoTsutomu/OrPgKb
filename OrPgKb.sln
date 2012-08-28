@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrPgKb", "OrPgKb\OrPgKb.csproj", "{F48791F3-BAE1-4C5C-B74D-59E3313191DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F48791F3-BAE1-4C5C-B74D-59E3313191DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F48791F3-BAE1-4C5C-B74D-59E3313191DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F48791F3-BAE1-4C5C-B74D-59E3313191DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F48791F3-BAE1-4C5C-B74D-59E3313191DB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

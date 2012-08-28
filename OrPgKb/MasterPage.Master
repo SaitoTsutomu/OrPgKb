@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="OrPgKb.MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>ORナレッジ・ベース</title>
+</head>
+<body style="margin-left:0;margin-top:0">
+<form id="form1" runat="server">
+<table cellpadding="0" cellspacing="0" width="100%">
+<tr style="height:88">
+<td style="background-image:URL(/OrPgKb/img/or.gif);background-repeat:no-repeat;width:272px;height:91px">
+<div style="width:260px;">
+&nbsp;&nbsp;&nbsp;
+<a href="/OrPgKb/" style="text-decoration:none;color:Blue;font-size:x-large;font-weight:bold">ORプログラミング<br />&nbsp;ナレッジ・ベース</a>
+    <asp:LinkButton ID="btnReset" runat="server" OnClick="btnReset_Click">.</asp:LinkButton>
+</div>
+</td>
+<td style="text-align:right">
+    &nbsp;<asp:TextBox ID="tbSearch" runat="server" OnTextChanged="btnSearch_Click"></asp:TextBox><asp:Button ID="btnSearch" runat="server" Text="検索" Width="72" OnClick="btnSearch_Click" />&nbsp;&nbsp;<br />
+    &nbsp;<asp:TextBox ID="tbLogin" runat="server" OnTextChanged="btnLogin_Click"></asp:TextBox><asp:Button ID="btnLogin" runat="server" Text="ログイン" Width="72" OnClick="btnLogin_Click" />&nbsp;&nbsp;<br />
+&nbsp;<asp:Label ID="lbUser" runat="server" Text=""></asp:Label>
+<asp:LinkButton ID="btnLogout" runat="server" OnClick="btnLogout_Click">ログアウト</asp:LinkButton>
+&nbsp;&nbsp;<asp:LinkButton ID="btnNotAnswer" runat="server" OnClick="btnNotAnswer_Click">未解答</asp:LinkButton>
+</td></tr>
+<tr><td>
+カテゴリ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<asp:Button ID="btnRegist" runat="server" Text="問題の投稿" Width="91px" OnClick="btnRegist_Click" /><br />
+<asp:ListBox ID="lstCate" runat="server" AutoPostBack="True" OnSelectedIndexChanged="lstCate_SelectedIndexChanged" Rows="22" Width="93%"></asp:ListBox>
+<br />
+<br />
+ユーザ<br />
+<asp:ListBox ID="lstUser" runat="server" AutoPostBack="True" OnSelectedIndexChanged="lstUser_SelectedIndexChanged" Width="93%" Rows="14"></asp:ListBox></td>
+<td rowspan="2" style="vertical-align:top">
+<asp:contentplaceholder id="ContentPlaceHolder1" runat="server"></asp:contentplaceholder>
+</td></tr>
+</table>
+</form></body>
+</html>
